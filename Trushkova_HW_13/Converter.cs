@@ -11,6 +11,7 @@ namespace Trushkova_HW_13
         double _usdToGrivna;
         double _eurToGrivna;
         double _rubToGrivna;
+        
         public Converter(double usd, double eur, double rub)
         {
             this._usdToGrivna = usd;
