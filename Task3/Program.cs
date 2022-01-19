@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Task3;
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Hello, Teacher!");
 
 Employee employee = new Employee("Антон", "Иванов");
 employee.Position = "руководитель";
