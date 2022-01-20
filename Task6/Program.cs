@@ -3,7 +3,7 @@ using Task6;
 
 Console.WriteLine("Hello, Teacher!");
 
-User user = new User("Julyalya", DateTime.Now);
+User user = new ("Julyalya", DateTime.Now);
 user.Name = "Julia";
 user.Age = 32;
 user.Surname = "Lol";
