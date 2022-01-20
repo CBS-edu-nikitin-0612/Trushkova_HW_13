@@ -8,9 +8,9 @@ namespace Task6
 {
     internal class User
     {
-        string _login;
-        string _name;
-        string _surname;
+        string? _login;
+        string? _name;
+        string? _surname;
         int _age;
         readonly DateTime _date;
 
@@ -19,10 +19,19 @@ namespace Task6
             _date = dateTime;
         }
 
+#nullable disable
         public User(string login, DateTime dateTime) : this(dateTime)
         {
-            this._login = login;
+            if (login != null)
+            {
+                this._login = login;
+            }
+            else
+            {
+                this._login = "Логин не задан";
+            }
         }
+#nullable restore
 
         public string Login
         {
@@ -81,6 +90,12 @@ namespace Task6
         public DateTime DateTimeLogin
         {
             get { return _date; }
+        }
+
+        public void Show()
+        {
+            Console.WriteLine($"Пользователь {_login} c именем {_name} " +
+    $"и фамилией {_surname} возраст {_age} зарегистрировался {_date}");
         }
     }
 }

@@ -3,11 +3,10 @@ using Task6;
 
 Console.WriteLine("Hello, Teacher!");
 
-User user = new User("Julyalya", new DateTime());
+User user = new User("Julyalya", DateTime.Now);
 user.Name = "Julia";
 user.Age = 32;
 user.Surname = "Lol";
 
-Console.WriteLine($"Пользователь {user.Login} c именем {user.Name} " +
-    $"и фамилией {user.Surname} возраст {user.Age} зарегистрировался {user.DateTimeLogin}");
+user.Show();
 
