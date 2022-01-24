@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Trushkova_HW_13
+﻿namespace Trushkova_HW_13
 {
     internal class Converter
     {
